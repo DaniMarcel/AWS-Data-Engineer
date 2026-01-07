@@ -33,18 +33,6 @@ El sistema maneja dos flujos de ingesta que convergen en una vista unificada:
 - **Lenguajes:** Python 3.12, SQL (Presto/Trino).
 - **Librerías:** `boto3`, `pandas`, `yfinance`.
 
-## 📂 Estructura del Repositorio
-
-├── src/
-│ ├── lambda_function.py # Extracción en tiempo real (AWS Lambda)
-│ └── backfill_script.py # Script local para descarga histórica (Yahoo Finance)
-├── sql/
-│ ├── view_cleanup.sql # Limpieza de JSON en vivo
-│ └── view_master.sql # Unificación (Live + Historic)
-├── img/
-│ └── architecture_diagram.png
-└── README.md
-
 ## 📊 Resultados
 
 La vista maestra permite consultar la historia completa sin distinción de la fuente de origen.
